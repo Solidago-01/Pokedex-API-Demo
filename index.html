@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- <header>
+        <h1>Pokedex API</h1>
+        <h2>L Autumn Gnadinger</h2>
+        <h3>Description</h3>
+    </header> -->
+
+    <div class="pokedex-grid surface3D shift-up">
+        
+        <div id="pokedexGridBack">
+            <img src="assets/pokedex-back-panel.svg" alt="" srcset="">
+        </div>
+        
+        <div class="red-background-left">
+        </div>
+
+        <div class="red-background-right">
+        </div>
+
+        <div id="pokedexGridTopLeft">
+            <img class="svg" src="assets/pokedex-top-left.svg">
+
+        </div>
+
+        <div id="pokedexGridLeftMiddle">
+            <div class="screen container" id="leftScreen">
+                <img class="filterSettings" src="" alt="" id="pokemonSprite">
+                <div class="crtOverlay scanlines"></div>
+            </div>
+        </div>
+
+        <div id="pokedexGridLeftBottom">
+            <div class="pokemon-search">
+                <input type="text" id="pokemonName" placeholder="  Enter Pokemon Name">
+                <br>
+                <button id="search" onclick="eventHandler()">Search</button>
+                <button id="buttonDown" onclick="buttonDown()">&#8678;</button>
+                <button id="buttonUp" onclick="buttonUp()">&#8680;</button>
+            </div>
+        </div>
+
+        <div id="pokedexGridMiddle">
+            <img src="assets/pokedex-middle.svg" alt="" srcset="">
+        </div>
+        
+
+        <div id="pokedexGridRight">
+            <div class="screen" id="rightScreen">
+                <div id="pokemonInfo">
+                    <p id="pokemonDisplayName">Welcome, trainer!</p>
+                    <p id="pokemonNumber"></p>
+                    <p id="pokemonHeight"></p>
+                    <p id="pokemonMoves1"></p>
+                    <p id="pokemonMoves2"></p>
+                    <p id="pokemonType"></p>
+                </div>
+            </div>
+
+            <button id="hearCry" onclick="playCry()">Hear cry &#x266B;</button>
+
+
+        </div>
+
+    </div>
+    <br>
+
+    <footer>
+        <h2 id="numberTracker">0</h2>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

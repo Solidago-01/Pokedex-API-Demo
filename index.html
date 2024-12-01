@@ -17,7 +17,8 @@
     <header>
         <h1 class="sixtyfour-convergence-font">Pokédex API</h1>
         <h3>This project is for demonstration purposes only. Showcasing REST API workflow, 
-            client-side browser caching and retrieval, and custom vector styling. 
+            client-side browser caching and retrieval, and custom vector styling.</h3>
+        <h3>
             <a href="https://github.com/Solidago-01/Pokedex-API-Demo">
             See the GitHub repo for this project here</a>, or, 
             <a href="https://pokeapi.co/">
@@ -26,21 +27,20 @@
         <h3>Search for your favorite Pokémon by name or browse through the catalog 
             by number with the arrow buttons.
         </h3>
-        <h3>For the best experience, view on desktop.
-        </h3>
     </header>
 
     <main>
         <div class="pokedex-grid surface3D shift-up-and-left">
-            
-            <div id="pokedexGridBack">
-                <img src="assets/pokedex-back-panel.svg" alt="" srcset="">
+
+            <div id="pokedexGridBackLeft">
+                <img src="assets/pokedex-left-back-panel.svg" alt="" srcset="">
+            </div>
+
+            <div id="pokedexGridBackRight">
+                <img src="assets/pokedex-back-panel-right.svg" alt="" srcset="">
             </div>
             
             <div class="red-background-underpaint-left">
-            </div>
-    
-            <div class="red-background-underpaint-right">
             </div>
     
             <div id="pokedexGridTopLeft">
@@ -70,8 +70,12 @@
             <div id="pokedexGridMiddle">
                 <img src="assets/pokedex-middle.svg" alt="" srcset="">
             </div>
+
+            <div id="pokedexGridMobileRight">
+                <img src="assets/pokedex-mobile-right.svg" alt="" srcset="">
+            </div>
             
-            <div id="pokedexGridRight">
+            <div id="pokedexGridRightMiddle">
                 <div class="screen" id="rightScreen">
                     <div id="pokemonInfo">
                         <p id="pokemonDisplayName">Welcome, trainer!</p>
@@ -83,8 +87,14 @@
                     </div>
                 </div>
     
+            </div>
+            
+            <div id="pokedexGridRightBottom">
                 <button id="hearCry" onclick="playCry()">Hear cry &#x266B;</button>
-    
+            </div>
+
+            <div id="pokedexGridFrontFace">
+                <img src="assets/front-face-panel.svg" alt="" srcset="">
             </div>
     
         </div>

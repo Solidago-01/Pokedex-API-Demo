@@ -276,7 +276,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin: 4rem 2rem;
+    margin: 4rem 1rem;
   }
 
   .surface3D {

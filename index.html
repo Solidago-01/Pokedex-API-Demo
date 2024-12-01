@@ -6,77 +6,93 @@
     <title>Pokedex API</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
-    <!-- <header>
-        <h1>Pokedex API</h1>
-        <h2>L Autumn Gnadinger</h2>
-        <h3>Description</h3>
-    </header> -->
+    <header>
+        <h1 class="sixtyfour-convergence-font">Pokédex API</h1>
+        <h3>This project is for demonstration purposes only. Showcasing REST API workflow, 
+            client-side browser caching and retrieval, and custom vector styling. 
+            <a href="https://github.com/Solidago-01/Pokedex-API-Demo">
+            See the GitHub repo for this project here</a>, or, 
+            <a href="https://pokeapi.co/">
+            see the API documentation here.</a>
+        </h3>
+        <h3>Search for your favorite Pokémon by name or browse through the catalog 
+            by number with the arrow buttons.
+        </h3>
+        <h3>For the best experience, view on desktop.
+        </h3>
+    </header>
 
-    <div class="pokedex-grid surface3D shift-up">
-        
-        <div id="pokedexGridBack">
-            <img src="assets/pokedex-back-panel.svg" alt="" srcset="">
-        </div>
-        
-        <div class="red-background-left">
-        </div>
-
-        <div class="red-background-right">
-        </div>
-
-        <div id="pokedexGridTopLeft">
-            <img class="svg" src="assets/pokedex-top-left.svg">
-
-        </div>
-
-        <div id="pokedexGridLeftMiddle">
-            <div class="screen container" id="leftScreen">
-                <img class="filterSettings" src="" alt="" id="pokemonSprite">
-                <div class="crtOverlay scanlinesContainer">
-                    <img class="scanlines" src="assets/pokedex-scanlines.svg" alt="">
+    <main>
+        <div class="pokedex-grid surface3D shift-up-and-left">
+            
+            <div id="pokedexGridBack">
+                <img src="assets/pokedex-back-panel.svg" alt="" srcset="">
+            </div>
+            
+            <div class="red-background-underpaint-left">
+            </div>
+    
+            <div class="red-background-underpaint-right">
+            </div>
+    
+            <div id="pokedexGridTopLeft">
+                <img class="svg" src="assets/pokedex-top-left.svg">
+    
+            </div>
+    
+            <div id="pokedexGridLeftMiddle">
+                <div class="screen container" id="leftScreen">
+                    <img class="filterSettings" src="" alt="" id="pokemonSprite">
+                    <div class="crtOverlay scanlinesContainer">
+                        <img class="scanlines" src="assets/pokedex-scanlines.svg" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div id="pokedexGridLeftBottom">
-            <div class="pokemon-search">
-                <input type="text" id="pokemonName" placeholder="  Enter Pokemon Name">
-                <br>
-                <button id="search" onclick="eventHandler()">Search</button>
-                <button id="buttonDown" onclick="buttonDown()">&#8678;</button>
-                <button id="buttonUp" onclick="buttonUp()">&#8680;</button>
-            </div>
-        </div>
-
-        <div id="pokedexGridMiddle">
-            <img src="assets/pokedex-middle.svg" alt="" srcset="">
-        </div>
-        
-
-        <div id="pokedexGridRight">
-            <div class="screen" id="rightScreen">
-                <div id="pokemonInfo">
-                    <p id="pokemonDisplayName">Welcome, trainer!</p>
-                    <p id="pokemonNumber"></p>
-                    <p id="pokemonHeight"></p>
-                    <p id="pokemonMoves1"></p>
-                    <p id="pokemonMoves2"></p>
-                    <p id="pokemonType"></p>
+    
+            <div id="pokedexGridLeftBottom">
+                <div class="pokemon-search">
+                    <input type="text" id="pokemonName" placeholder="  Enter Pokemon Name">
+                    <br>
+                    <button id="search" onclick="eventHandler()">Search</button>
+                    <button id="buttonDown" onclick="buttonDown()">&#8678;</button>
+                    <button id="buttonUp" onclick="buttonUp()">&#8680;</button>
                 </div>
             </div>
-
-            <button id="hearCry" onclick="playCry()">Hear cry &#x266B;</button>
-
-
+    
+            <div id="pokedexGridMiddle">
+                <img src="assets/pokedex-middle.svg" alt="" srcset="">
+            </div>
+            
+            <div id="pokedexGridRight">
+                <div class="screen" id="rightScreen">
+                    <div id="pokemonInfo">
+                        <p id="pokemonDisplayName">Welcome, trainer!</p>
+                        <p id="pokemonNumber"></p>
+                        <p id="pokemonHeight"></p>
+                        <p id="pokemonMoves1"></p>
+                        <p id="pokemonMoves2"></p>
+                        <p id="pokemonType"></p>
+                    </div>
+                </div>
+    
+                <button id="hearCry" onclick="playCry()">Hear cry &#x266B;</button>
+    
+            </div>
+    
         </div>
-
-    </div>
-    <br>
+        <br>
+    </main>
 
     <footer>
+        <h3><a href="https://lautumngnadinger.com/">L Autumn Gnadinger</a></h3>
         <h2 id="numberTracker">0</h2>
     </footer>
 

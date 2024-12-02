@@ -281,7 +281,7 @@ footer {
 
   .surface3D {
     width: 600px;
-    transform: perspective(1000px) rotateX(0deg) rotateZ(.1deg);
+    transform: perspective(1000px) rotateX(0deg) rotateZ(0deg);
   }
 
   .pokedex-grid {
@@ -319,6 +319,10 @@ footer {
   
   #pokedexGridLeftMiddle {
     translate: 0rem .25rem;
+  }
+
+  #pokedexGridLeftBottom {
+    margin-top: 1rem;
   }
   
   #pokedexGridMiddle {

@@ -175,24 +175,7 @@ function eventHandler(event = undefined){
         // Will request pokemon by name
         requestPokemonData();
     }
-
 }
-
-// Receive User Input
-function buttonUp () {
-    // Initiate logic for search with number increment
-    eventHandler("up");
-}
-function buttonDown () {
-    // Initiate logic for search with number decrement
-    console.log("down button pressed");
-    eventHandler("down");
-}
-function playCry () {
-    // Initiate logic for sound effect "play cry"
-    eventHandler("cry");
-}
-
 
 // Cache json responses to local storage
 function tryCache(data) {
@@ -205,11 +188,19 @@ function tryCache(data) {
     }
 }
 
-// fetch json responses from local storage
-// function tryGetCache() {
-//     currentNum = document.getElementById("numberTracker").innerHTML;
-//     var tryURL = `https://pokeapi.co/api/v2/pokemon/${currentNum}`;
-//     let cachedData = JSON.parse(localStorage.getItem(tryURL));
-//     console.log("this is cached data:");
-//     console.log(cachedData);
-// }
+// Receive User Input
+function buttonUp () {
+    // Initiate logic for search with number increment
+    eventHandler("up");
+}
+function buttonDown () {
+    // Initiate logic for search with number decrement
+    eventHandler("down");
+}
+function playCry () {
+    // Initiate logic for sound effect "play cry"
+    eventHandler("cry");
+}
+
+// Separated as event listener for mobile browser support
+document.getElementById("hearCry").addEventListener("click", playCry);
